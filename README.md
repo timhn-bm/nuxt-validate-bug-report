@@ -1,6 +1,24 @@
 # Nuxt Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Bug reproduction repo.
+
+When we client-side navigate to a route for which we have `validate: () => false`, the URL doesn't update. This can be very confusing for users.
+
+### To reproduce bug:
+
+-   click on `Page B (reproduce bug)` link.
+-   you will see the 404 error page ✓
+-   the URL doesn't change to `/b` ❌
+
+### example solution
+
+I created a `customValidate` plugin and `customValidate` property on `RouteMeta`. This is used by page `/c` to showcase the expected behaviour. `/c` has `customValidate: () => false`
+
+When we click on the link `Page C (...)``
+
+-   we see the 404 error page ✓
+-   the URL changes to `/c` ✓
+-   when navigating backward, we go back to the previous page ✓
 
 ## Setup
 

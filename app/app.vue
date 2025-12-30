@@ -7,9 +7,15 @@
 
 		<NuxtPage />
 
-		<NuxtLink to="/">Home</NuxtLink>
-		<NuxtLink to="/a">Page A</NuxtLink>
-		<NuxtLink to="/b">Page B</NuxtLink>
+		<div style="display: flex; gap: 10px">
+			<NuxtLink to="/">Home</NuxtLink>
+			<NuxtLink to="/a">Page A</NuxtLink>
+			<NuxtLink to="/b">Page B (reproduce bug)</NuxtLink>
+			<NuxtLink to="/c"
+				>Page C (works as expected thanks to customValidate
+				plugin)</NuxtLink
+			>
+		</div>
 	</div>
 </template>
 
