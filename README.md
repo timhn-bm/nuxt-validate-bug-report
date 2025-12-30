@@ -10,7 +10,7 @@ When we client-side navigate to a route for which we have `validate: () => false
 -   you will see the 404 error page ✓
 -   the URL doesn't change to `/b` ❌
 
-### example solution
+### Example solution
 
 I created a `customValidate` plugin and `customValidate` property on `RouteMeta`. This is used by page `/c` to showcase the expected behaviour. `/c` has `customValidate: () => false`
 
@@ -21,6 +21,10 @@ When we click on the link `Page C (...)``
 -   when navigating backward, we go back to the previous page ✓
 
 
+
+### See video below:
+- we reproduce the bug when trying to navigate to `/b`
+- we reproduce the expected behaviour when trying to navigate to `/b` 
 
 https://github.com/user-attachments/assets/01675ded-aad0-4b9f-b4f0-4b37f72b590f
 
