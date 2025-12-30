@@ -20,6 +20,12 @@ When we click on the link `Page C (...)``
 -   the URL changes to `/c` ✓
 -   when navigating backward, we go back to the previous page ✓
 
+
+
+https://github.com/user-attachments/assets/01675ded-aad0-4b9f-b4f0-4b37f72b590f
+
+
+
 ## Setup
 
 Make sure to install dependencies:
